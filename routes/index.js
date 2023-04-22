@@ -1,7 +1,14 @@
-const routes = require("express").Router();
+// const routes = require("express").Router();
 
-routes.get("/", (req, res) => {
-  res.send("Camila Gallegos");
-});
+// const myController = require("../controller");
 
-module.exports = routes;
+// routes.get("/", myController.display);
+
+// module.exports = routes;
+
+const express = require("express");
+const router = express.Router();
+
+router.use("/contacts", require("./contacts"));
+
+module.exports = router;
