@@ -6,11 +6,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 const mongodb = require("./db/connect");
 
-app.use(bodyParser.json());
-
-app.listen(port, function () {
-  console.log(`Listening on ${port}`);
-});
+// app.listen(port, function () {
+//   console.log(`Listening on ${port}`);
+// });
 
 app
   .use(bodyParser.json())

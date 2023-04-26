@@ -1,9 +1,3 @@
-// const display = (req, res, next) => {
-//   res.send("Camila Gallegos");
-// };
-
-// module.exports = display;
-
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
@@ -28,4 +22,13 @@ const getSingle = async (req, res, next) => {
   });
 };
 
-module.exports = { getAll, getSingle };
+// const createContact = (request, response, next) => {
+//   collection.insert(request.body, (error, result) => {
+//     if (error) {
+//       return response.status(500).send(error);
+//     }
+//     response.send(result.result);
+//   });
+// };
+
+const updateContact = (module.exports = { getAll, getSingle });
