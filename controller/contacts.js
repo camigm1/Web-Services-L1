@@ -31,4 +31,9 @@ const getSingle = async (req, res, next) => {
 //   });
 // };
 
-const updateContact = (module.exports = { getAll, getSingle });
+// const updateContact;
+// const deleteContact;
+
+// const updateContact
+
+module.exports = { getAll, getSingle };
