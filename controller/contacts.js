@@ -92,20 +92,6 @@ const deleteContact = async (req, res) => {
   }
 };
 
-// const createContact = (request, response, next) => {
-//   collection.insert(request.body, (error, result) => {
-//     if (error) {
-//       return response.status(500).send(error);
-//     }
-//     response.send(result.result);
-//   });
-// };
-
-// const updateContact;
-// const deleteContact;
-
-// const updateContact
-
 module.exports = {
   getAll,
   getSingle,
