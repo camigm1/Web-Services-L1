@@ -20,9 +20,39 @@ PUT http://localhost:3000/contacts/6448994090b41b8ad8eb37db HTTP/1.1
 content-type: application/json
 
 {
-"firstName":"Camila","lastName":"Gallegos","email":"camigm2@test.com","favoriteColor":"Purple","birthday":"12/12/20"
+"firstName":"Camila","lastName":"Gallegos","email":"camigm1@test.com","favoriteColor":"Purple","birthday":"12/12/20"
 } 
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/6448994090b41b8ad8eb37db HTTP/1.1
+DELETE http://localhost:3000/contacts/644dea1f1f7ee6c3e5e2610d HTTP/1.1
 
+
+// PRODUCTION Deploy 
+
+### Get all contacts 
+GET https://l2-connect-api-to-a-database.onrender.com/contacts
+
+### Get contact by id 
+
+GET https://l2-connect-api-to-a-database.onrender.com/contacts/6448994090b41b8ad8eb37db
+
+### Create contact 
+
+POST https://l2-connect-api-to-a-database.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
+}
+
+### PUT contact 
+
+PUT https://l2-connect-api-to-a-database.onrender.com/contacts/64518807f87aa7450494b1b1 HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Sarah", "lastName":"Birch", "email":"sarahB@gmail.com", "favoriteColor":"Yellow", "birthday":"06/12/20"
+}
+
+### DELETE contact 
+DELETE https://l2-connect-api-to-a-database.onrender.com/contacts/644dea1f1f7ee6c3e5e2610d HTTP/1.1
