@@ -1,8 +1,8 @@
 GET http://localhost:3000/contacts
 
 
-
-GET http://localhost:3000/6448994090b41b8ad8eb37db
+### get single contact
+GET http://localhost:3000/contacts/6448994090b41b8ad8eb37db
 
 
 
@@ -25,7 +25,7 @@ content-type: application/json
 } 
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/644dea1f1f7ee6c3e5e2610d HTTP/1.1
+DELETE http://localhost:3000/contacts/64518807f87aa7450494b1b1 HTTP/1.1
 
 
 // PRODUCTION Deploy 
@@ -56,4 +56,4 @@ content-type: application/json
 }
 
 ### DELETE contact 
-DELETE https://l2-connect-api-to-a-database.onrender.com/contacts/64518807f87aa7450494b1b1 HTTP/1.1
+DELETE https://l2-connect-api-to-a-database.onrender.com/contacts/6453e962c613575bc85cfac5 HTTP/1.1
